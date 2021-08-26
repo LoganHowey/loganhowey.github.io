@@ -1,25 +1,52 @@
 <!DOCTYPE html> 
+
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
 <html>
+
 <head>
+
 <title> Logan Howey Directory </title> 
+
 <style>
-    header {
+
+    .header {
         background-color: aquamarine;
         padding:5%;
         text-align: center;
         color:darkred;
-    ;}
+        font-family:impact;
+        font-size:48px;
+    }
+
+    .under{
+        text-decoration:underline;
+    }
+
 </style>
 </head> 
 <body>
-    <div>
-        <header>
-    <p> Logan Howey </p>
-    </header>
+
+    <div class=header>
+        <header>Logan Howey</header>
     </div>
-<li><a href="https://www.youtube.com/channel/UClAxccGe4x5RWqOyonvB0eQ">Youtube</a></li>
-<li><a href="https://github.com/LoganHowey">Github</a></li>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/1200px-YouTube_social_white_square_%282017%29.svg.png" width=20 height=20>
+
+<div class="flex items-between">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/1200px-YouTube_social_white_square_%282017%29.svg.png"
+width=20 height=20>
+    <div class=under>
+<a href="https://www.youtube.com/channel/UClAxccGe4x5RWqOyonvB0eQ" class="text-blue-500">Youtube</a>
+    </div>
+</div>
+
+<div class="flex items-between">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+width=20 height=20>
+<div class=under>
+<a href="https://github.com/LoganHowey" class="text-blue-500">Github</a>
+</div>
+</div>
+
 </body>
+
 </html>
