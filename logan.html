@@ -1,10 +1,12 @@
 <!DOCTYPE html> 
 
-<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
 <html>
 
 <head>
+
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 <title> Logan Howey Directory </title> 
 
@@ -25,7 +27,7 @@
 
 </style>
 </head> 
-<body>
+<body x-data="{open: false}">
 
     <div class=header>
         <header>Logan Howey</header>
@@ -47,6 +49,10 @@ width=20 height=20>
 </div>
 </div>
 
+<button x-on:click="open = ! open" class="text-purple-500">About</button>
+<p x-show="open">
+    Logan Howey is a freshman at Rocky Mountain College currently studying Computer Science.
+</p>
 </body>
 
 </html>
