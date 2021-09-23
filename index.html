@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+
+<html>
+
+<head>
+
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<title> Logan Howey Directory </title> 
+
+<style>
+
+    .header {
+        background-color: aquamarine;
+        padding:5%;
+        text-align: center;
+        color:darkred;
+        font-family:impact;
+        font-size:48px;
+    }
+
+    .under{
+        text-decoration:underline;
+    }
+
+</style>
+</head> 
+<body x-data="{open: false}">
+
+    <div class=header>
+        <header>Logan Howey</header>
+    </div>
+
+<div class="flex items-between">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/1200px-YouTube_social_white_square_%282017%29.svg.png"
+width=20 height=20>
+    <div class=under>
+<a href="https://www.youtube.com/channel/UClAxccGe4x5RWqOyonvB0eQ" class="text-blue-500">Youtube</a>
+    </div>
+</div>
+
+<div class="flex items-between">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+width=20 height=20>
+<div class=under>
+<a href="https://github.com/LoganHowey" class="text-blue-500">Github</a>
+</div>
+</div>
+
+<button x-on:click="open = ! open" class="text-purple-500">About</button>
+<p x-show="open">
+    Logan Howey is a freshman at Rocky Mountain College currently studying Computer Science.
+</p>
+</body>
+
+</html>
